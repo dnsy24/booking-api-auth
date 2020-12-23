@@ -97,15 +97,21 @@ HTTP/1.1 200 OK
 HTTP/1.1 200 OK
 
 {
-        "name": "Toske",
-        "lastname": "Smulkisnes",
-        "provider": "Afina",
-        "amount": 899.34,
-        "duration": {
-            "begin_date": "2020-01-15",
-            "end_date": "2020-12-14"
-        },
-        "additional_coverage": "Eyes"
+    "name": "Merle",
+    "lastname": "Ebert",
+    "price": 844.73,
+    "paid": true,
+    "city": "East Richardtown",
+    "languages": [
+        "English",
+        "German",
+        "French"
+    ],
+    "booking_dates": {
+        "checkIn": "2020-12-19",
+        "checkOut": "2020-12-25"
+    },
+    "additional_needs": "Breakfast"
     }
 ````    
 
