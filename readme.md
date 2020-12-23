@@ -6,6 +6,9 @@
   - admin - allows to fulfil all ``CRUD`` operations:
     - username: admin
     - password: admin
+
+![postman_admin_admin](https://user-images.githubusercontent.com/60865783/103043463-ee217a80-454a-11eb-87e9-4040dbeb8a00.png)
+
     
   - user - allows to read data only  
     - username: user
@@ -14,7 +17,7 @@
 
 
 
-``Get`` all bookings details http://localhost:8080/v2/api/booking/
+``Get`` all bookings details from http://localhost:8080/v2/api/booking/
 - request returns details of all bookings that exist within the API
 
 ````
@@ -63,7 +66,7 @@ HTTP/1.1 200 OK
 ]
 ````
 
-``Get`` one booking detail by `id` http://localhost:8080/v2/api/booking/:id
+``Get`` one booking details by `id` http://localhost:8080/v2/api/booking/id
 - request returns details of a single booking that exist within the API
 ````
 HTTP/1.1 200 OK
@@ -87,3 +90,26 @@ HTTP/1.1 200 OK
 "additional_needs": "n/a"
 }
   ````
+``POST`` adds one booking details http://localhost:8080/v2/api/booking/
+- request adds single booking to the list of bookings within the API
+
+````
+HTTP/1.1 200 OK
+
+{
+        "name": "Toske",
+        "lastname": "Smulkisnes",
+        "provider": "Afina",
+        "amount": 899.34,
+        "duration": {
+            "begin_date": "2020-01-15",
+            "end_date": "2020-12-14"
+        },
+        "additional_coverage": "Eyes"
+    }
+````    
+
+``DELETE`` removes one booking details by ``id`` http://localhost:8080/v2/api/booking/id
+- request deletes one booking from the list of bookings within the API
+
+``HTTP/1.1 200 OK``

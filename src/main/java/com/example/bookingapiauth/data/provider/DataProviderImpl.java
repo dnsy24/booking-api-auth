@@ -9,7 +9,7 @@ import java.util.List;
 
 @Component
 public class DataProviderImpl implements DataProvider {
-
+//  TODO: bean???
     private final Faker faker = new Faker();
 
     private static DataProviderImpl instance;

@@ -16,7 +16,7 @@ import java.util.Map;
 public class DataStorageImpl implements DataStorage {
 
     private long id;
-
+//  TODO: application.properties ???
 //    @Value("${number.of.bookings}")
 //    private int NUMBER_OF_BOOKINGS;
     private final int NUMBER_OF_BOOKINGS = 15;

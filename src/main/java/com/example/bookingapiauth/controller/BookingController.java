@@ -2,6 +2,7 @@ package com.example.bookingapiauth.controller;
 
 
 import com.example.bookingapiauth.datastorage.DataStorageImpl;
+import com.example.bookingapiauth.datastorage.config.DataStorage;
 import com.example.bookingapiauth.exceptions.NotFoundException;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -13,8 +14,8 @@ import java.util.Map;
 @RestController
 @RequestMapping("v2/api/booking")
 public class BookingController {
-
-    DataStorageImpl dataStorage = new DataStorageImpl();
+//  TODO: bean
+    DataStorage dataStorage = new DataStorageImpl();
 
     private List<Map<String, Object>> bookingList = dataStorage.getBookingList();
 
